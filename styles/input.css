@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@theme {
+  --font-roboto: "Roboto", sans-serif; 
+  --font-joti-one: "Joti One", cursive;
+};
