@@ -33,8 +33,8 @@ Este projeto é um site estático que apresenta informações sobre a carreira d
 
 ### 1. Clonar o repositório
 ```bash
-git clone https://github.com/mrruankoala/duzz.git
-cd duzz
+git clone https://github.com/mrruankoala/Duzz-Page.git
+cd Duzz-Page
 ```
 
 ### 2. Instalar dependências
@@ -44,11 +44,11 @@ npm install
 
 ### 3. Compilar Tailwind CSS
 ```bash
-npx tailwindcss -i ./v1/src/styles/input.css -o ./v1/src/styles/output.css --watch
+npx tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --watch
 ```
 
 ### 4. Abrir o site
-Abra `v1/src/index.html` no navegador ou use um servidor local:
+Abra `/src/index.html` no navegador ou use um servidor local:
 ```bash
 python -m http.server 8000
 # ou
@@ -58,21 +58,16 @@ npx http-server
 ## 📁 Estrutura do Projeto
 
 ```
-duzz/
-├── v1/
-│   ├── src/
-│   │   ├── index.html          # Página principal
-│   │   ├── about.html          # (em desenvolvimento)
-│   │   ├── albums.html         # (em desenvolvimento)
-│   │   └── styles/
-│   │       ├── input.css       # Arquivo fonte Tailwind
-│   │       └── output.css      # Arquivo compilado
-│   ├── assets/
-│   │   ├── duzz.png
-│   │   ├── duzz2.png
-│   │   └── fdp.png
-│   ├── package.json
-│   └── package-lock.json
+├── src/
+│   ├── index.html          # Página principal
+│   └── styles/
+│       ├── input.css       # Arquivo fonte Tailwind
+│       └── output.css      # Arquivo compilado
+├── assets/
+│   ├── img1.webp
+│   ├── img2.webp
+│   └── img3.webp
+├── package.json
 ├── .gitignore
 └── README.md
 ```
@@ -80,11 +75,11 @@ duzz/
 ## 🎨 Personalização
 
 ### Modificar Tailwind CSS
-- Edite `v1/src/styles/input.css`
+- Edite `/src/styles/input.css`
 - Recompile executando o comando de watch mencionado acima
 
 ### Adicionar novas páginas
-1. Crie um novo arquivo `.html` em `v1/src/`
+1. Crie um novo arquivo `.html` em `/src/`
 2. Use a mesma estrutura base do `index.html`
 3. Atualize a navegação em todas as páginas
 
